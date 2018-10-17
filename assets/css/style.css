@@ -1,0 +1,46 @@
+h1, h2, p {
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    color: rgba(40, 40, 40,.75);
+    font-size: 17px;
+}
+
+.answer {
+    font-size: 15px;
+}
+
+#answerA:hover #selectA {
+    color: rgba(40, 40, 40,.75);
+}
+
+#answerB:hover #selectB {
+    color: rgba(40, 40, 40,.75);
+}
+
+#answerC:hover #selectC {
+    color: rgba(40, 40, 40,.75);
+}
+
+#answerD:hover #selectD {
+    color: rgba(40, 40, 40,.75);
+}
+
+#selectA {
+    color: rgba(40, 40, 40,0);
+}
+
+#selectB {
+    color: rgba(40, 40, 40,0);
+}
+
+#selectC {
+    color: rgba(40, 40, 40,0);
+}
+
+#selectD {
+    color: rgba(40, 40, 40,0);
+}
+body {
+    background-image: url("../images/retina_wood.png");
+}
+
