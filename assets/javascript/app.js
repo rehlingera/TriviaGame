@@ -221,13 +221,27 @@ window.onload = function () {
     var intervalId;
     var timerRunning = true;
     var usedQuestions = [];
+    var correctAnswers = 0;
+    var wrongAnswers = 0;
 
     var newQuestion = function () {
+
+        if(usedQuestions.length<=19){
+
         function getRandomInt(array) {
             return Math.floor(Math.random() * Math.floor(array));
         };
         var timeLeft = 15;
         var triviaQuestion = trivia[getRandomInt(trivia.length)];
+        var triviaQuestionId = trivia.indexOf(triviaQuestion);
+        
+        if(usedQuestions.includes(triviaQuestionId)) {
+            newQuestion();
+        }
+
+        else {
+        usedQuestions.push(triviaQuestionId);
+        console.log (usedQuestions);
         $("#triviaCard").html("<div class='row'><div class='col-md-12' id='questionArea'><p>Question question question question question question question question?</p></div></div><div class='row'><div class='col-md-12'><p style='font-size:14px'>Time left <span id='timeLeft'>00</span> seconds</p></div></div><div class='row'><div class='col-md-12' id='answerA'><p class='answer' id='answerAText' style='text-align:left'><span id='selectA'>► </span>A. Answer</p></div></div><div class='row'><div class='col-md-12' id='answerB'><p class='answer' id='answerBText' style='text-align:left'><span id='selectB'>► </span>B. Answer</p></div></div><div class='row'><div class='col-md-12' id='answerC'><p class='answer' id='answerCText' style='text-align:left'><span id='selectC'>► </span>C. Answer</p></div></div><div class='row' style='padding-bottom: 35%'><div class='col-md-12' id='answerD'><p class='answer' id='answerDText' style='text-align:left'><span id='selectD'>► </span>D. Answer</p></div></div>");
         $("#timeLeft").html(timeLeft);
         $("#questionArea").html("<p>" + triviaQuestion.question + "</p>");
@@ -236,6 +250,7 @@ window.onload = function () {
         $("#answerC").html("<p class='answer' id='C' style='text-align:left'><span id='selectC'>► </span>C. " + triviaQuestion.C + "</p>");
         $("#answerD").html("<p class='answer' id='D' style='text-align:left'><span id='selectD'>► </span>D. " + triviaQuestion.D + "</p>");
         console.log (triviaQuestion.question);
+        console.log ("Score: "+correctAnswers+" correct, "+wrongAnswers+" wrong");
         if (timerRunning) {
             count = function() {
                 timeLeft--;
@@ -263,16 +278,33 @@ window.onload = function () {
             else {
                 wrongAnswer();
             };
-
-            // if(timeleft === 0) {
-            //     outOfTime();
-            // }
         };
     
         var correctAnswer = function() {
             console.log("correct");
             $("#triviaCard").empty();
-            $("#triviaCard").html("<div class='row'><div class='col-md-12'><p style='height:500px'>CORRECT</p></div></div>");
+            $("#triviaCard").html("<div class='row'><div class='col-md-12'><p>CORRECT</p><p>The correct answer was ''"+triviaQuestion.correct+".''</p><div id='animation' style='height:500px'><img src='assets/images/BrainWin1.png' style='width:75%; margin-left:12.5%'></div></div></div>");
+            setTimeout(function() {
+                $("#animation").empty();
+                $("#animation").html("<img src='assets/images/BrainWin2.png' style='width:75%; margin-left:12.5%'>");
+            },500);
+            setTimeout(function() {
+                $("#animation").empty();
+                $("#animation").html("<img src='assets/images/BrainWin3.png' style='width:75%; margin-left:12.5%'>");
+            },750);
+            setTimeout(function() {
+                $("#animation").empty();
+                $("#animation").html("<img src='assets/images/BrainWin2.png' style='width:75%; margin-left:12.5%'>");
+            },1000);
+            setTimeout(function() {
+                $("#animation").empty();
+                $("#animation").html("<img src='assets/images/BrainWin3.png' style='width:75%; margin-left:12.5%'>");
+            },1250);
+            setTimeout(function() {
+                $("#animation").empty();
+                $("#animation").html("<img src='assets/images/BrainWin1.png' style='width:75%; margin-left:12.5%'>");
+            },1500);
+            correctAnswers++
             setTimeout(function() {
                 $("#triviaCard").empty();
                 newQuestion();
@@ -282,7 +314,28 @@ window.onload = function () {
         var wrongAnswer = function() {
             console.log("wrong");
             $("#triviaCard").empty();
-            $("#triviaCard").html("<div class='row'><div class='col-md-12'><p>WRONG</p><p style='height:500px'>The correct answer was ''"+triviaQuestion.correct+".''</p></div></div>");
+            $("#triviaCard").html("<div class='row'><div class='col-md-12'><p>WRONG</p><p>The correct answer was ''"+triviaQuestion.correct+".''</p><div id='animation' style='height:500px'><img src='assets/images/BrainLoss1.png' style='width:75%; margin-left:12.5%'></div></div></div>");
+            setTimeout(function() {
+                $("#animation").empty();
+                $("#animation").html("<img src='assets/images/BrainLoss2.png' style='width:75%; margin-left:12.5%'>");
+            },500);
+            setTimeout(function() {
+                $("#animation").empty();
+                $("#animation").html("<img src='assets/images/BrainLoss3.png' style='width:75%; margin-left:12.5%'>");
+            },1000);
+            setTimeout(function() {
+                $("#animation").empty();
+                $("#animation").html("<img src='assets/images/BrainLoss4.png' style='width:75%; margin-left:12.5%'>");
+            },1250);
+            setTimeout(function() {
+                $("#animation").empty();
+                $("#animation").html("<img src='assets/images/BrainLoss3.png' style='width:75%; margin-left:12.5%'>");
+            },1500);
+            setTimeout(function() {
+                $("#animation").empty();
+                $("#animation").html("<img src='assets/images/BrainLoss4.png' style='width:75%; margin-left:12.5%'>");
+            },1750);
+            wrongAnswers++
             setTimeout(function() {
                 $("#triviaCard").empty();
                 newQuestion();
@@ -293,6 +346,7 @@ window.onload = function () {
             console.log("out of time");
             $("#triviaCard").empty();
             $("#triviaCard").html("<div class='row'><div class='col-md-12'><p style='height:500px'>OUT OF TIME</p></div></div>");
+            wrongAnswers++
             setTimeout(function() {
                 $("#triviaCard").empty();
                 newQuestion();
@@ -300,12 +354,26 @@ window.onload = function () {
         };
     
         $(".answer").on("click", answerPicked);
+    };
+        }
+        else {
+                $("#triviaCard").empty();
+                $("#triviaCard").html("<div class='row'><div class='col-md-12' id='resultScreen'><p>GAME!</p><br /><p>Correct: "+correctAnswers+"</p><p>Wrong: "+wrongAnswers+"</p></div></div>");
+                if (correctAnswers>=wrongAnswers) {
+                    $("#resultScreen").append("<p>YOU WIN!</p>");
+                }
+                else {
+                    $("#resultScreen").append("<p>YOU LOSE!</p>");
+                };
+                $("#resultScreen").append("<div id='playAgain'><p style='height:250px'><span id='selectPlayAgain'>► </span>Play again</p></div>");
+                $("#playAgain").on("click", function () {
+                    correctAnswers = 0;
+                    wrongAnswers = 0;
+                    usedQuestions = [];
+                    newQuestion();
+                    console.log("playAgain clicked")
+                    });
         };
-
+    };
     newQuestion();
-
-
-
-
-
-};
+    }

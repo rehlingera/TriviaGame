@@ -25,21 +25,14 @@ h1, h2, p {
     color: rgba(40, 40, 40,.75);
 }
 
-#selectA {
+#playAgain:hover #selectPlayAgain {
+    color: rgba(40, 40, 40,.75);
+}
+
+#selectA, #selectB, #selectC, #selectD, #selectPlayAgain {
     color: rgba(40, 40, 40,0);
 }
 
-#selectB {
-    color: rgba(40, 40, 40,0);
-}
-
-#selectC {
-    color: rgba(40, 40, 40,0);
-}
-
-#selectD {
-    color: rgba(40, 40, 40,0);
-}
 body {
     background-image: url("../images/retina_wood.png");
 }
