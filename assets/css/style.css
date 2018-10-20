@@ -2,11 +2,11 @@ h1, h2, p {
     text-align: center;
     font-family: 'Press Start 2P', cursive;
     color: rgba(40, 40, 40,.75);
-    font-size: 17px;
+    font-size: 16px;
 }
 
 .answer {
-    font-size: 15px;
+    font-size: 14px;
 }
 
 #answerA:hover #selectA {

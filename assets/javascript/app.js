@@ -21,7 +21,7 @@ var trivia = [{
     correct: "B"
 },{
     question: "If you attack a ____ in Zelda, a whole bunch of them may band together and kill you.",
-    A: "Chicken",
+    A: "Cuckoo",
     B: "Wolf",
     C: "Cow",
     D: "Henchman",
@@ -208,6 +208,216 @@ var trivia = [{
     C: "Shepherd",
     D: "Cortana",
     correct: "C"
+},{
+    question: "The first generation of Pokemon games released in America were:",
+    A: "Red and Green",
+    B: "Red and Blue",
+    C: "Gold and Silver",
+    D: "Black and White",
+    correct: "B"
+},{
+    question: "In the original Pac-Man, all of the following fruits were available except:",
+    A: "Apple",
+    B: "Orange",
+    C: "Melon",
+    D: "Banana",
+    correct: "D"
+},{
+    question: "All of the following were colors of the ghosts in the original Pac-Man except:",
+    A: "Green",
+    B: "Blue",
+    C: "Red",
+    D: "Pink",
+    correct: "A"
+},{
+    question: "Which of the following was a system produced by Nintendo?",
+    A: "Genesis",
+    B: "Color TV-Game",
+    C: "SE-30",
+    D: "Scorpion",
+    correct: "B"
+},{
+    question: "The main character of Skyrim is called the ____.",
+    A: "Master of Dragons",
+    B: "Mountain King",
+    C: "Dragonborn",
+    D: "Hero of Time",
+    correct: "C"
+},{
+    question: "Who is the princess of the Mushroom Kingdom?",
+    A: "Zelda",
+    B: "Peach",
+    C: "Daisy",
+    D: "Rosalina",
+    correct: "B"
+},{
+    question: "This video game developer made Sea of Thieves and Banjo Kazooie.",
+    A: "Rare",
+    B: "Ubisoft",
+    C: "Nintendo",
+    D: "Sega",
+    correct: "A"
+},{
+    question: "What is the name of the research facility in the game Half-Life?",
+    A: "Aperture Science",
+    B: "Umbrella Corp",
+    C: "Area 51",
+    D: "Black Mesa",
+    correct: "D"
+},{
+    question: "What is the name of the ship Isaac must escape in Dead Space?",
+    A: "Pillar of Autumn",
+    B: "USS Horizon",
+    C: "USG Ishimura",
+    D: "Enterprise",
+    correct: "C"
+},{
+    question: "The main character of Dead Space is a ____.",
+    A: "Soldier",
+    B: "Custodian",
+    C: "Pilot",
+    D: "Engineer",
+    correct: "D"
+},{
+    question: "What kind creature is Spyro?",
+    A: "Dragon",
+    B: "Dinosaur",
+    C: "Lizard",
+    D: "Wyvern",
+    correct: "A"
+},{
+    question: "In The Legend of Zelda: Twilight Princess, Link transforms into a ____.",
+    A: "Rabbit",
+    B: "Wolf",
+    C: "Bird",
+    D: "Zora",
+    correct: "B"
+},{
+    question: "In the Legend of Zelda: Link to the Past, Link transforms into a ____.",
+    A: "Wolf",
+    B: "Goron",
+    C: "Rabbit",
+    D: "Deku",
+    correct: "C"
+},{
+    question: "This race in Legend of Zelda eats rocks and lives in the mountains.",
+    A: "Zora",
+    B: "Deku",
+    C: "Hylian",
+    D: "Goron",
+    correct: "D"
+},{
+    question: "This race in Legend of Zelda is made of wood and lives in the forests.",
+    A: "Deku",
+    B: "Goron",
+    C: "Zora",
+    D: "Hylian",
+    correct: "A"
+},{
+    question: "This race in Legend of Zelda live in the oceans and can breathe underwater.",
+    A: "Hylian",
+    B: "Zora",
+    C: "Goron",
+    D: "Deku",
+    correct: "B"
+},{
+    question: "Who is the creator of Minecraft?",
+    A: "Bill Gates",
+    B: "Shigeru Myamoto",
+    C: "Markus Persson",
+    D: "Kideo Kojima",
+    correct: "C"
+},{
+    question: "Often called the father of Nintendo, this man created Mario and Zelda.",
+    A: "Hideo Kojima",
+    B: "Shinzo Abe",
+    C: "Hayao Miyazaki",
+    D: "Shigeru Myamoto",
+    correct: "D"
+},{
+    question: "Who developed the original Pokemon games for Game Boy?",
+    A: "Game Freak",
+    B: "Game Shark",
+    C: "Nintendo",
+    D: "Sega",
+    correct: "A"
+},{
+    question: "What is the 150th Pokemon?",
+    A: "Pikachu",
+    B: "Mewtwo",
+    C: "Tauros",
+    D: "Mew",
+    correct: "B"
+},{
+    question: "Which of these is not a legendary Pokemon?",
+    A: "Articuno",
+    B: "Zapdos",
+    C: "Dragonite",
+    D: "Moltres",
+    correct: "C"
+},{
+    question: "Which of these is not a race featured in the Mass Effect games?",
+    A: "Turian",
+    B: "Solarian",
+    C: "Krogan",
+    D: "Vulcan",
+    correct: "D"
+},{
+    question: "What is the name of Commander Shepherd's ship in Mass Effect?",
+    A: "Normandy",
+    B: "Bounty",
+    C: "Ishimura",
+    D: "Black Pearl",
+    correct: "A"
+},{
+    question: "Which of the following is a type of pet available in Mass Effect?",
+    A: "Dog",
+    B: "Hamster",
+    C: "Varen",
+    D: "Cat",
+    correct: "B"
+},{
+    question: "Where can Mario be seen in the game Punch Out?",
+    A: "In the crowd",
+    B: "As a fighter",
+    C: "As the referee",
+    D: "As a coach",
+    correct: "C"
+},{
+    question: "What is the Konami Code?",
+    A: "rosebud",
+    B: "iddqd",
+    C: "ROCKETMAN",
+    D: "↑↑↓↓←→←→BA",
+    correct: "D"
+},{
+    question: "What is the title of the fifth Elder Scrolls game?",
+    A: "Skyrim",
+    B: "Morrowind",
+    C: "Oblivion",
+    D: "Shivering Isles",
+    correct: "A"
+},{
+    question: "In Golden Axe, the Dwarf was voiced by a man on death row called ____.",
+    A: "Jim Bob",
+    B: "The Bloodalyzer",
+    C: "Murderface",
+    D: "The Joker",
+    correct: "B"
+},{
+    question: "What is likely the first game to use the word f***?",
+    A: "Battle Toads",
+    B: "Tony Hawk Pro Skater",
+    C: "Paranoia",
+    D: "Skyrim",
+    correct: "C"
+},{
+    question: "What is the name of the song GladOS sings to the player at the end of Portal?",
+    A: "Cara Mia",
+    B: "Thriller",
+    C: "The Cake is a Lie",
+    D: "Still Alive",
+    correct: "D"
 }];
 
 
