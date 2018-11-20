@@ -1,6 +1,6 @@
 # TriviaGame
 
-<a href="https://rehlingera.github.io/TriviaGame">Deployed page</a>
+<a href="https://rehlingera.github.io/TriviaGame" target="_blank">Deployed page</a>
 <br />
 <br />
 Instructions:
