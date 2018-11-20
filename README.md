@@ -1,6 +1,8 @@
 # TriviaGame
 
-<a href="https://rehlignera.github.io/TriviaGame">Deployed page</a>
+<a href="https://rehlingera.github.io/TriviaGame">Deployed page</a>
+<br />
+<br />
 Instructions:
 
 Click the game console's screen to navigate through the game (unfortunately, the console's buttons do not work).
